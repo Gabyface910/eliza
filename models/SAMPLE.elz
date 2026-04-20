@@ -1,0 +1,9 @@
+{
+  "name": "SAMPLE-MODEL",
+  "rules": {
+              "hello": [
+                         "Hello, how can I help?"
+                         "How are you today?"
+                       ]
+           }
+}
