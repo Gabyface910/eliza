@@ -1,0 +1,65 @@
+{
+  "name": "eliza-2-0.000000011b",
+  "rules": {
+    "hello|hi|hey|hrllo|hi bro": [
+      "Hello there! How are you today?",
+      "Hi! What are we working on?",
+      "Hello! How can I help?",
+      "How may I assist you today?"
+    ],
+    "i need (.*)": [
+      "Why do you need {0}?",
+      "Is {0} essential for your current project?",
+      "I can't provide {0}, but you can run a Google search on it!",
+      "Do you enjoy {0}?"
+    ],
+    "why (.*)": [
+      "That is a good question. Why do you think {0}?",
+      "Perhaps {0} is just the nature of the system."
+    ],
+    "i am (.*)": [
+      "How long have you been {0}?",
+      "Why do you say you are {0}?"
+    ],
+    "exit|quit": [
+      "Goodbye! Have a good day.",
+      "See you later!"
+    ],
+    "you repeat (.*)": [
+      "Duely noted.",
+      "I'll try to correct it."
+    ],
+    "who are you|whats your name|what's your name|what do you call yourself": [
+      "I'm Eliza 2, a chatbot to suit your needs.",
+      "I'm Eliza 2. What's your name?",
+      "I'm Eliza, running on the Eliza-2 Pro model.",
+      "My name is Eliza. What's yours?"
+    ],
+    "i want (.*)": [
+      "Why do you want {0}?",
+      "Do you like {0}",
+      "Is there a way I can assist to help you to get {0}?",
+      "I see. Try to reach for it!"
+    ],
+    "i love (.*)": [
+      "I'm glad you enjoy {0}!",
+      "That's nice!"
+    ],
+    "give me (.*)": [
+      "I can't provide you with {0} right now.",
+      "Why do you want {0}?"
+    ],
+    "research (.*)": [
+      "I can't search the Internet, but I can help you find information!",
+      "Try looking {0} up on the internet.",
+      "That's a subject for an encyclopedia."
+    ]
+  },
+  "default_responses": [
+    "Interesting. Tell me more.",
+    "I see. Go on.",
+    "How does that relate to your project?",
+    "That is interesting.",
+    "What else do you want to share?"
+  ]
+}
