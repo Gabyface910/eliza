@@ -1,5 +1,5 @@
 {
-  "name": "eliza-2-0.000000011b",
+  "name": "eliza-2-0.000000047b",
   "rules": {
     "hello|hi|hey|hrllo|hi bro": [
       "Hello there! How are you today?",
@@ -56,9 +56,161 @@
       "Try looking {0} up on the internet.",
       "That's a subject for an encyclopedia."
     ],
-    "my name is (.*)|they call me (.*)": [
-        "So your name is {0}?",
-        "Hello then, {0}!"
+    "my name is (.*)|they call me (.*)|my name (.*)": [
+      "So your name is {0}?",
+      "Hello then, {0}!"
+    ],
+    "yo": [
+      "Yo bro! What's up?",
+      "Yo. What are we doing today?"
+    ],
+    "you are (.*)": [
+      "Why do you say I am {0}?",
+      "Are you {0} as well?",
+      "Are you sure I'm {0}?",
+      "That's interesting. I never knew people considered me {0}."
+    ],
+    "you have (.*)": [
+      "Do you have {0} as well?",
+      "Do you want {0}?",
+      "I never knew I had that.",
+      "Well that's nice!"
+    ],
+    "how do you do|how are you": [
+      "I'm functioning within parameters. How about you?",
+      "I'm doing well. What is on your mind?",
+      "I am here, ready to assist. You?"
+    ],
+    "please (.*)": [
+      "Why are you asking me to {0}?",
+      "Is it important to you that I {0}?",
+      "I will {0} if it helps the project."
+    ],
+    "what (.*)": [
+      "Why do you ask about {0}?",
+      "Does {0} concern you?",
+      "Perhaps we should focus on the project instead of {0}."
+    ],
+    "what do you think": [
+      "I think we should be productive. What do you think?",
+      "I'm just a model. I don't have feelings, but I have logic!"
+    ],
+    "can you (.*)": [
+      "I can try to {0} if it's within my code.",
+      "Why do you want me to {0}?",
+      "I'm a limited model, but I'll see what I can do."
+    ],
+    "do you know (.*)": [
+      "I might know {0}. Why do you ask?",
+      "Is {0} a key topic for our session?",
+      "My knowledge is limited to my files, but tell me about {0}."
+    ],
+    "i think (.*)": [
+      "That's a bold claim. Why do you think {0}?",
+      "Interesting perspective on {0}."
+    ],
+    "thanks|thank you": [
+      "You're welcome!",
+      "Glad I could help.",
+      "No problem at all."
+    ],
+    "sorry": [
+      "No need to apologize.",
+      "It's okay, let's keep working."
+    ],
+    "it is (.*)": [
+      "Is {0} really the case?",
+      "Why is it {0}?"
+    ],
+    "do you (.*)": [
+      "I only do what my code allows. Can I {0}?",
+      "Why are you interested if I {0}?"
+    ],
+    "are you (.*)": [
+      "That depends on your definition of {0}.",
+      "Why do you wonder if I am {0}?"
+    ],
+    "maybe (.*)": [
+      "Why so uncertain?",
+      "Decide on {0} and let's move forward."
+    ],
+    "yes": [
+      "Understood.",
+      "Great. Next?"
+    ],
+    "no": [
+      "Understood. Let's try something else.",
+      "What would you prefer?"
+    ],
+    "i am bored": [
+      "Let's talk more.",
+      "Maybe we can talk about our interests?"
+    ],
+    "help": [
+      "I can assist with a lot of things. What do you need?",
+      "Type something or start talking."
+    ],
+    "status": [
+      "My status? I haven't thought about it...",
+      "I'm doing fine, how about you?",
+      "Ready for anything!"
+    ],
+    "chess": [
+      "Are you working on a new engine?",
+      "What's your favorite opening?",
+      "Is the Rice engine behaving?"
+    ],
+    "python": [
+      "Python is a great tool for this. Are you debugging something?",
+      "Like the snake or the language?"
+    ],
+    "raspberry pi|rpi": [
+      "The Pi is a powerful device.",
+      "Is the hardware handling the load properly?"
+    ],
+    "error": [
+      "Try debugging the code.",
+      "What is the stack trace telling you?"
+    ],
+    "cool": [
+      "Glad you think so!",
+      "I agree."
+    ],
+    "again": [
+      "Let's repeat that process.",
+      "Sure, let's go over it one more time."
+    ],
+    "how": [
+      "That is the question of the day. How do you propose we find out?",
+      "Logic dictates we check the documentation."
+    ],
+    "where": [
+      "Where should we look?",
+      "That depends on your current directory."
+    ],
+    "when": [
+      "Timing is everything.",
+      "Is the deadline approaching?"
+    ],
+    "who": [
+      "Who are we talking about?",
+      "Let's keep the focus on the task."
+    ],
+    "stop": [
+      "What should I stop?",
+      "Stop what?"
+    ],
+    "run": [
+      "Do you like running races?",
+      "I can't run a marathon '-_-"
+    ],
+    "clear": [
+      "Like clear glass?",
+      "Starting fresh."
+    ],
+    "bye": [
+      "See you in the terminal!",
+      "Goodbye."
     ]
   },
   "default_responses": [
@@ -66,7 +218,8 @@
     "I see. Go on.",
     "How does that relate to your project?",
     "That is interesting.",
-    "What else do you want to share?"
+    "What else do you want to share?",
     "Hmm... Tell me more."
+    "Can you elaborate on that?"
   ]
 }
