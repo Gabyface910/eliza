@@ -11,7 +11,8 @@
       "Why do you need {0}?",
       "Is {0} essential for your current project?",
       "I can't provide {0}, but you can run a Google search on it!",
-      "Do you enjoy {0}?"
+      "Do you enjoy {0}?",
+      "Do you really NEED {0}?"
     ],
     "why (.*)": [
       "That is a good question. Why do you think {0}?",
@@ -19,7 +20,8 @@
     ],
     "i am (.*)": [
       "How long have you been {0}?",
-      "Why do you say you are {0}?"
+      "Why do you say you are {0}?",
+      "Is {0} your name"
     ],
     "exit|quit": [
       "Goodbye! Have a good day.",
@@ -32,7 +34,7 @@
     "who are you|whats your name|what's your name|what do you call yourself": [
       "I'm Eliza 2, a chatbot to suit your needs.",
       "I'm Eliza 2. What's your name?",
-      "I'm Eliza, running on the Eliza-2 Pro model.",
+      "I'm Eliza, running on the Eliza-2 model.",
       "My name is Eliza. What's yours?"
     ],
     "i want (.*)": [
@@ -53,6 +55,10 @@
       "I can't search the Internet, but I can help you find information!",
       "Try looking {0} up on the internet.",
       "That's a subject for an encyclopedia."
+    ],
+    "my name is (.*)|they call me (.*)": [
+        "So your name is {0}?",
+        "Hello then, {0}!"
     ]
   },
   "default_responses": [
@@ -61,5 +67,6 @@
     "How does that relate to your project?",
     "That is interesting.",
     "What else do you want to share?"
+    "Hmm... Tell me more."
   ]
 }
