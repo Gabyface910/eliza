@@ -1,5 +1,5 @@
 {
-  "name": "eliza-2-0.000000047b-smart",
+  "name": "eliza-2-0.000000037b-smart",
   "rules": {
     "(?i)^(hello|hi|hey|yo|sup)$": [
       "Hey there{ name}! How's it going?",
