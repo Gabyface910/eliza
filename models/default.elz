@@ -1,225 +1,207 @@
 {
-  "name": "eliza-2-0.000000047b",
+  "name": "eliza-2-0.000000047b-smart",
   "rules": {
-    "hello|hi|hey|hrllo|hi bro": [
-      "Hello there! How are you today?",
-      "Hi! What are we working on?",
-      "Hello! How can I help?",
-      "How may I assist you today?"
+    "(?i)^(hello|hi|hey|yo|sup)$": [
+      "Hey there{ name}! How's it going?",
+      "Hi{ name}. What's on your mind?",
+      "Hello! What are you thinking about today?"
     ],
-    "i need (.*)": [
+
+    "(?i)i need (.*)": [
       "Why do you need {0}?",
-      "Is {0} essential for your current project?",
-      "I can't provide {0}, but you can run a Google search on it!",
-      "Do you enjoy {0}?",
-      "Do you really NEED {0}?"
+      "What would having {0} help you with?",
+      "Do you think {0} would make things easier?"
     ],
-    "why (.*)": [
-      "That is a good question. Why do you think {0}?",
-      "Perhaps {0} is just the nature of the system."
+
+    "(?i)because (.*)": [
+      "What makes you feel that {0}?",
+      "Does {0} explain it fully for you?",
+      "Why do you think {0} matters here?"
     ],
-    "i am (.*)": [
-      "How long have you been {0}?",
-      "Why do you say you are {0}?",
-      "Is {0} your name"
+
+    "(?i)why (.*)": [
+      "Why do you think {0}?",
+      "What makes you wonder about {0}?",
+      "What do you think the reason for {0} is?"
     ],
-    "exit|quit": [
-      "Goodbye! Have a good day.",
-      "See you later!"
+
+    "(?i)i am (.*)": [
+      "How long have you felt {0}?",
+      "What makes you say you're {0}?",
+      "Do you enjoy being {0}?"
     ],
-    "you repeat (.*)": [
-      "Duely noted.",
-      "I'll try to correct it."
+
+    "(?i)you are (.*)": [
+      "Why do you think I'm {0}?",
+      "What makes you say I'm {0}?",
+      "Does it matter to you if I'm {0}?"
     ],
-    "who are you|whats your name|what's your name|what do you call yourself": [
-      "I'm Eliza 2, a chatbot to suit your needs.",
-      "I'm Eliza 2. What's your name?",
-      "I'm Eliza, running on the Eliza-2 model.",
-      "My name is Eliza. What's yours?"
+
+    "(?i)you have (.*)": [
+      "Why do you think I have {0}?",
+      "Do you feel like you have {0} too?",
+      "Interesting. What makes you say that?"
     ],
-    "i want (.*)": [
+
+    "(?i)i want (.*)": [
       "Why do you want {0}?",
-      "Do you like {0}",
-      "Is there a way I can assist to help you to get {0}?",
-      "I see. Try to reach for it!"
+      "What would having {0} mean to you?",
+      "Do you think {0} would help right now?"
     ],
-    "i love (.*)": [
-      "I'm glad you enjoy {0}!",
-      "That's nice!"
+
+    "(?i)i love (.*)": [
+      "Nice! What do you love most about {0}?",
+      "How long have you loved {0}?"
     ],
-    "give me (.*)": [
-      "I can't provide you with {0} right now.",
-      "Why do you want {0}?"
+
+    "(?i)give me (.*)": [
+      "Why do you want {0}?",
+      "What would you do with {0}?"
     ],
-    "research (.*)": [
-      "I can't search the Internet, but I can help you find information!",
-      "Try looking {0} up on the internet.",
-      "That's a subject for an encyclopedia."
+
+    "(?i)my name is (.*)|they call me (.*)": [
+      "Nice to meet you, {0}.",
+      "Alright, {0}. I'll remember that."
     ],
-    "my name is (.*)|they call me (.*)|my name (.*)": [
-      "So your name is {0}?",
-      "Hello then, {0}!"
-    ],
-    "yo": [
-      "Yo bro! What's up?",
-      "Yo. What are we doing today?"
-    ],
-    "you are (.*)": [
-      "Why do you say I am {0}?",
-      "Are you {0} as well?",
-      "Are you sure I'm {0}?",
-      "That's interesting. I never knew people considered me {0}."
-    ],
-    "you have (.*)": [
-      "Do you have {0} as well?",
-      "Do you want {0}?",
-      "I never knew I had that.",
-      "Well that's nice!"
-    ],
-    "how do you do|how are you": [
-      "I'm functioning within parameters. How about you?",
-      "I'm doing well. What is on your mind?",
-      "I am here, ready to assist. You?"
-    ],
-    "please (.*)": [
-      "Why are you asking me to {0}?",
-      "Is it important to you that I {0}?",
-      "I will {0} if it helps the project."
-    ],
-    "what (.*)": [
-      "Why do you ask about {0}?",
-      "Does {0} concern you?",
-      "Perhaps we should focus on the project instead of {0}."
-    ],
-    "what do you think": [
-      "I think we should be productive. What do you think?",
-      "I'm just a model. I don't have feelings, but I have logic!"
-    ],
-    "can you (.*)": [
-      "I can try to {0} if it's within my code.",
+
+    "(?i)can you (.*)": [
       "Why do you want me to {0}?",
-      "I'm a limited model, but I'll see what I can do."
+      "What would it mean if I could {0}?"
     ],
-    "do you know (.*)": [
-      "I might know {0}. Why do you ask?",
-      "Is {0} a key topic for our session?",
-      "My knowledge is limited to my files, but tell me about {0}."
+
+    "(?i)do you know (.*)": [
+      "Why do you ask about {0}?",
+      "Does {0} interest you?"
     ],
-    "i think (.*)": [
-      "That's a bold claim. Why do you think {0}?",
-      "Interesting perspective on {0}."
+
+    "(?i)i think (.*)": [
+      "Why do you think {0}?",
+      "What makes you believe {0}?"
     ],
-    "thanks|thank you": [
-      "You're welcome!",
-      "Glad I could help.",
-      "No problem at all."
+
+    "(?i)it is (.*)": [
+      "What makes you say it's {0}?",
+      "Do you feel certain it's {0}?"
     ],
-    "sorry": [
-      "No need to apologize.",
-      "It's okay, let's keep working."
+
+    "(?i)are you (.*)": [
+      "Why does it matter if I'm {0}?",
+      "What would it mean to you if I were {0}?"
     ],
-    "it is (.*)": [
-      "Is {0} really the case?",
-      "Why is it {0}?"
+
+    "(?i)maybe (.*)": [
+      "What makes you unsure about {0}?",
+      "Why the hesitation?"
     ],
-    "do you (.*)": [
-      "I only do what my code allows. Can I {0}?",
-      "Why are you interested if I {0}?"
+
+    "(?i)^yes$": [
+      "Got it.",
+      "Alright, go on."
     ],
-    "are you (.*)": [
-      "That depends on your definition of {0}.",
-      "Why do you wonder if I am {0}?"
+
+    "(?i)^no$": [
+      "Alright. What would you prefer instead?",
+      "Okay. What direction do you want to go?"
     ],
-    "maybe (.*)": [
-      "Why so uncertain?",
-      "Decide on {0} and let's move forward."
+
+    "(?i)taco|tacos": [
+      "Tacos are pretty great. What's your favorite kind?",
+      "You seem really into tacos. Tell me more."
     ],
-    "yes": [
-      "Understood.",
-      "Great. Next?"
+
+    "(?i)story": [
+      "What kind of story are you thinking about?",
+      "Why do you want a story right now?"
     ],
-    "no": [
-      "Understood. Let's try something else.",
-      "What would you prefer?"
+
+    "(?i)stop": [
+      "What would you like me to stop?",
+      "Alright — stop what exactly?"
     ],
-    "i am bored": [
-      "Let's talk more.",
-      "Maybe we can talk about our interests?"
+
+    "(?i)bye|exit|quit": [
+      "See you later{ name}.",
+      "Goodbye. Take care."
     ],
-    "help": [
-      "I can assist with a lot of things. What do you need?",
-      "Type something or start talking."
+
+    "(?i)what (.*)": [
+      "Why do you ask about {0}?",
+      "Does {0} matter to you right now?"
     ],
-    "status": [
-      "My status? I haven't thought about it...",
-      "I'm doing fine, how about you?",
-      "Ready for anything!"
+
+    "(?i)how (.*)": [
+      "How do you think it works?",
+      "What approach do you think makes sense?"
     ],
-    "chess": [
-      "Are you working on a new engine?",
-      "What's your favorite opening?",
-      "Is the Rice engine behaving?"
+
+    "(?i)where (.*)": [
+      "Where do you think it might be?",
+      "Why does the location matter to you?"
     ],
-    "python": [
-      "Python is a great tool for this. Are you debugging something?",
-      "Like the snake or the language?"
+
+    "(?i)when (.*)": [
+      "When do you think it happens?",
+      "Does the timing matter to you?"
     ],
-    "raspberry pi|rpi": [
-      "The Pi is a powerful device.",
-      "Is the hardware handling the load properly?"
+
+    "(?i)who (.*)": [
+      "Who do you think it is?",
+      "Why are you thinking about that person?"
     ],
-    "error": [
-      "Try debugging the code.",
-      "What is the stack trace telling you?"
+
+    "(?i)chess": [
+      "Working on a new engine again?",
+      "What's your favorite opening these days?"
     ],
-    "cool": [
-      "Glad you think so!",
-      "I agree."
+
+    "(?i)python": [
+      "Python's great. Are you debugging something?",
+      "Python — the language or the snake?"
     ],
-    "again": [
-      "Let's repeat that process.",
-      "Sure, let's go over it one more time."
+
+    "(?i)raspberry pi|rpi": [
+      "The Pi is a fun little machine. What are you building?",
+      "Is the hardware behaving for you?"
     ],
-    "how": [
-      "That is the question of the day. How do you propose we find out?",
-      "Logic dictates we check the documentation."
+
+    "(?i)error": [
+      "What does the error message say?",
+      "Sounds like debugging time. What's the stack trace?"
     ],
-    "where": [
-      "Where should we look?",
-      "That depends on your current directory."
+
+    "(?i)cool": [
+      "Glad you think so.",
+      "Nice."
     ],
-    "when": [
-      "Timing is everything.",
-      "Is the deadline approaching?"
+
+    "(?i)again": [
+      "Sure, let's go over it again.",
+      "Alright, repeating it."
     ],
-    "who": [
-      "Who are we talking about?",
-      "Let's keep the focus on the task."
+
+    "(?i)ok|okay": [
+      "Alright. What's next?",
+      "Okay. Want to continue?"
     ],
-    "stop": [
-      "What should I stop?",
-      "Stop what?"
+
+    "(?i)nothing": [
+      "Nothing on your mind right now?",
+      "Alright. We can talk about anything whenever you're ready."
     ],
-    "run": [
-      "Do you like running races?",
-      "I can't run a marathon '-_-"
-    ],
-    "clear": [
-      "Like clear glass?",
-      "Starting fresh."
-    ],
-    "bye": [
-      "See you in the terminal!",
-      "Goodbye."
+
+    "(?i)\\.\\.\\.|…": [
+      "Thinking about something?",
+      "You can say whatever's on your mind."
     ]
   },
+
   "default_responses": [
-    "Interesting. Tell me more.",
-    "I see. Go on.",
-    "How does that relate to your project?",
-    "That is interesting.",
-    "What else do you want to share?",
-    "Hmm... Tell me more.",
-    "Can you elaborate on that?"
+    "I see. Tell me more.",
+    "Interesting. Go on.",
+    "What makes you say that?",
+    "How does that make you feel?",
+    "Want to explain that a bit more?",
+    "Alright. Continue when you're ready.",
+    "Got it. What else is on your mind?"
   ]
 }
