@@ -2,8 +2,8 @@
   "name": "eliza-2-0.000000037b-smart",
   "rules": {
     "(?i)^(hello|hi|hey|yo|sup)$": [
-      "Hey there{ name}! How's it going?",
-      "Hi{ name}. What's on your mind?",
+      "Hey there! How's it going?",
+      "Hi. What's on your mind?",
       "Hello! What are you thinking about today?"
     ],
 
@@ -61,7 +61,7 @@
 
     "(?i)my name is (.*)|they call me (.*)": [
       "Nice to meet you, {0}.",
-      "Alright, {0}. I'll remember that."
+      "Alright, {0}. What's next?."
     ],
 
     "(?i)can you (.*)": [
